@@ -1,0 +1,37 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+.venv/
+venv/
+env/
+
+# Django security and uploads
+.env
+.env.*
+!.env.example
+media/
+staticfiles/
+*.log
+
+# Flutter generated files
+doctorlive_app/.dart_tool/
+doctorlive_app/build/
+doctorlive_app/.flutter-plugins
+doctorlive_app/.flutter-plugins-dependencies
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Sensitive/generated files
+*.key
+*.pem
+local.properties
+
+# Private healthcare and payment uploads
+doctorlive_backend/medical_documents/
+doctorlive_backend/payment_proofs/

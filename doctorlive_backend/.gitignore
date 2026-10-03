@@ -1,0 +1,60 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Django database
+db.sqlite3
+db.sqlite3-journal
+
+# User uploaded files
+media/
+
+# Collected static files
+staticfiles/
+
+# Environment secrets
+.env
+.env.local
+.env.production
+
+# Keep environment example file
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Test and coverage files
+.coverage
+htmlcov/
+.pytest_cache/
+coverage.xml
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Build and distribution files
+build/
+dist/
+*.egg-info/
