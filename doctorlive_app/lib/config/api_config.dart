@@ -2,8 +2,14 @@
 class ApiConfig {
   ApiConfig._();
 
-  /// Windows desktop aur Flutter Web ka local backend URL.
-  static const String baseUrl = 'http://127.0.0.1:8000';
+  /// Backend URL build time par set hoga.
+  ///
+  /// Local development mein default URL use hoga. Release build mein:
+  /// --dart-define=DOCTORLIVE_API_BASE_URL=https://your-api.example.com
+  static const String baseUrl = String.fromEnvironment(
+    'DOCTORLIVE_API_BASE_URL',
+    defaultValue: 'http://127.0.0.1:8000',
+  );
 
   /// Account endpoints.
   static const String login = '$baseUrl/api/accounts/login/';
